@@ -45,6 +45,7 @@
     "@aws-sdk/client-bedrock-runtime": "^3.561.0",
     "@aws-sdk/credential-providers": "^3.556.0",
     "@cmi-dair/skeleton-themes": "^0.0.2",
-    "openai": "^4.38.3"
+    "openai": "^4.38.3",
+    "svelte-carousel": "github:vadimkorr/svelte-carousel#pull/142/head"
   }
 }

@@ -1,14 +1,15 @@
 <script lang="ts">
     import type { LlmResponses } from "$lib/types";
     import LlmResults from "$lib/components/LlmResults.svelte";
+    import Carousel from "svelte-carousel";
 
     export let data: { body: LlmResponses[] };
 </script>
 
-<div class="space-y-8 mb-8">
+<Carousel>
     {#each data.body as results}
-        <div>
+        <div class="space-y-5 mt-5">
             <LlmResults {results} />
         </div>
     {/each}
-</div>
+</Carousel>
